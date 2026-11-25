@@ -631,16 +631,16 @@
     </div>
   </footer>
 
-  <script>
+  
+<script>
     const form = document.getElementById('quoteForm');
     const feedback = document.getElementById('formFeedback');
 
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      feedback.textContent = 'Solicitação registrada localmente. Conecte um endpoint ou serviço de formulário para envio real.';
-      form.reset();
+    form.addEventListener('submit', () => {
+      feedback.textContent = 'Enviando sua solicitação...';
     });
-  </script>
+</script>
+
 
 </body></html><head>
   <meta charset="utf-8">
